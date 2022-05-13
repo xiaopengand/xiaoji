@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            
+        }
+        #chicke-body {
+            position: relative;
+            transform-origin: 45em 30em;
+            animation: eat 1s ease-in-out infinite alternate-reverse;
+        }
+
+        @keyframes eat {
+            0% {
+                box-shadow: 0 0 10px yellow;
+                transform: rotate(-10deg);
+            }
+
+            100% {
+                box-shadow: 0 0 10px yellow;
+                transform: rotate(0deg);
+            }
+        }
+
+        /* mouth开始 */
+        .mouth-outer {
+            position: absolute;
+            top: 24.4em;
+            left: 15.4em;
+        }
+        .mouth {
+            position: relative;
+            /* display: none; */
+        }
+        .mouth1 {
+            height: 6em;
+            width: 2em;
+            border: 0.5em solid #000;
+            /* transform: rotate(90deg); */
+            border-bottom-left-radius: 100%;
+            border-top-color: transparent;
+            border-right-color: transparent;
+            position: absolute;
+            left: 0em;
+            top: 6em;
+        }
+        .mouth2 {
+            height: 6.5em;
+            width: 6.5em;
+            border: 0.5em solid #000;
+            border-top-left-radius: 100%;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            position: absolute;
+            left: 2em;
+            top: 5.5em;
+        }
+        .mouth3 {
+            height: 5.7em;
+            width: 2.7em;
+            border: 0.5em solid #000;
+            border-top-left-radius: 100%;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            position: absolute;
+            left: 5.8em;
+            top: 5.5em;
+        }
+        .mouth4 {
+            height: 5.1em;
+            width: 6.1em;
+            border: 0.5em solid #000;
+            border-top-left-radius: 100%;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            position: absolute;
+            left: 5.8em;
+            top: 5.5em;
+        }
+        /* mouth结束 */
+
+        /* body开始 */
+        .body-outer {
+            position: absolute;
+            top: 15em;
+            left: 15em;
+
+        }
+        .body {
+            position: relative;
+        }
+        .body1 {
+            height: 2em;
+            width: 35em;
+            border: 0.5em solid #000;
+            border-bottom-right-radius: 50% 100%;
+            border-bottom-left-radius: 50% 100%;
+            border-top-color: transparent;
+            position: absolute;
+            top: 15em;
+            left: 12em;
+        }
+        .body2 {
+            height: 2.2em;
+            width: 20em;
+            border: 0.5em solid #000;
+            border-bottom-right-radius: 100%;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            position: absolute;
+            top: 13em;
+            left: 37.5em;
+        }
+        .body3 {
+            height: 0em;
+            width: 17em;
+            border: 0.25em solid #000;
+            transform: rotate(5deg);
+            position: absolute;
+            top: 12em;
+            left: 40.5em;
+        }
+        .body4 {
+            height: 0em;
+            width: 22em;
+            border: 0.25em solid #000;
+            transform: rotate(165deg);
+            position: absolute;
+            top: 8.4em;
+            left: 40em;
+        }
+        .body5 {
+            height: 0.1em;
+            width: 25em;
+            border: 0.25em solid #000;
+            transform: rotate(-5deg);
+            position: absolute;
+            top: 6.7em;
+            left: 36.5em;
+        }
+        .body6 {
+            height: 0.1em;
+            width: 20.7em;
+            border: 0.25em solid #000;
+            transform: rotate(-18deg);
+            position: absolute;
+            top: 4.6em;
+            left: 36.1em;
+        }
+        .body7 {
+            height: 0.1em;
+            width: 23.7em;
+            border: 0.25em solid #000;
+            transform: rotate(-8deg);
+            position: absolute;
+            top: 3em;
+            left: 32.6em;
+        }
+        .body8 {
+            height: 0.1em;
+            width: 37.5em;
+            border: 0.25em solid #000;
+            transform: rotate(-26.5deg);
+            position: absolute;
+            top: -4em;
+            left: 30.6em;
+        }
+        .body9 {
+            height: 0.1em;
+            width: 40.1em;
+            border: 0.25em solid #000;
+            transform: rotate(-19.2deg);
+            position: absolute;
+            top: -5.8em;
+            left: 27.2em;
+        }
+        .body10 {
+            height: 0em;
+            width: 12.5em;
+            border: 0.25em solid #000;
+            transform: rotate(-60deg);
+            position: absolute;
+            top: -4.7em;
+            left: 25.3em;
+        }
+        .body11 {
+            height: 0em;
+            width: 12.5em;
+            border: 0.25em solid #000;
+            transform: rotate(-39.5deg);
+            position: absolute;
+            top: -6em;
+            left: 23.6em;
+        }
+        .body12 {
+            height: 0em;
+            width: 4.9em;
+            border: 0.25em solid #000;
+            transform: rotate(-69deg);
+            position: absolute;
+            top: -4.4em;
+            left: 23.6em;
+        }
+        .body13 {
+            height: 0em;
+            width: 26.5em;
+            border: 0.25em solid #000;
+            transform: rotate(-32deg);
+            position: absolute;
+            top: 0.5em;
+            left: 2.4em;
+        }
+        /* body结束 */
+
+        /* cockscomb开始 */
+        .cockscomb-outer {
+            position: absolute;
+            top: 20.1em;
+            left: 15em;
+        }
+        .cockscomb {
+            position: relative;
+        }
+        .cockscomb1 {
+            height: 0em;
+            width: 5.7em;
+            border: 0.25em solid #000;
+            transform: rotate(-120deg);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .cockscomb2 {
+            height: 0em;
+            width: 5.6em;
+            border: 0.25em solid #000;
+            transform: rotate(-68deg);
+            position: absolute;
+            top: 0.1em;
+            left: -2.3em;
+        }
+        .cockscomb3 {
+            height: 0em;
+            width: 7.3em;
+            border: 0.25em solid #000;
+            transform: rotate(2.5deg);
+            position: absolute;
+            top: 2.3em;
+            left: -7.5em;
+        }
+        .cockscomb4 {
+            height: 0em;
+            width: 4.8em;
+            border: 0.25em solid #000;
+            transform: rotate(40deg);
+            position: absolute;
+            top: 3.6em;
+            left: -7.9em;
+        }
+        .cockscomb5 {
+            height: 0em;
+            width: 7.2em;
+            border: 0.25em solid #000;
+            transform: rotate(-20.7deg);
+            position: absolute;
+            top: 6.4em;
+            left: -10.6em;
+        }
+        .cockscomb6 {
+            height: 0em;
+            width: 8.4em;
+            border: 0.25em solid #000;
+            transform: rotate(11deg);
+            position: absolute;
+            top: 8.4em;
+            left: -10.4em;
+        }
+        .cockscomb7 {
+            height: 0em;
+            width: 6.3em;
+            border: 0.25em solid #000;
+            transform: rotate(-24deg);
+            position: absolute;
+            top: 10.4em;
+            left: -8.2em;
+        }
+        .cockscomb8 {
+            height: 0em;
+            width: 9em;
+            border: 0.25em solid #000;
+            transform: rotate(-9deg);
+            position: absolute;
+            top: 11em;
+            left: -8em;
+        }
+        /* cockscomb结束 */
+
+        /* wing开始 */
+        .wing1 {
+            width: 15.8em;
+            height: 3em;
+            border: 0.5em solid #000;
+            border-bottom-left-radius: 100%;
+            border-top-color: transparent;
+            border-right-color: transparent;
+            position: absolute;
+            top: 24em;
+            left: 26em;
+        }
+        .wing2 {
+            width: 2em;
+            height: 3em;
+            border: 0.5em solid #000;
+            border-top-right-radius: 100%;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            position: absolute;
+            top: 24em;
+            left: 21em;
+        }
+        .wing3 {
+            width: 0.5em;
+            height: 2.5em;
+            border: 0.5em solid #000;
+            border-top-right-radius: 100%;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            position: absolute;
+            top: 24em;
+            left: 23em;
+        }
+        /* wing结束 */
+        /* eye开始 */
+        .eye {
+            width: 0;
+            height: 0;
+            border: 0.5em solid #000;
+            border-radius: 50%;
+            position: absolute;
+            top: 28em;
+            left: 18em;
+        }
+        /* eye结束 */
+
+        /* leg开始 */
+        .leg-outer {
+             position: relative;
+        }
+
+        .lega {
+            position: absolute;
+            top: 27em;
+            left: 25em;
+        }
+        .legb {
+            position: absolute;
+            top: 27em;
+            left: 36em;
+        }
+        .lega1 {
+            width: 0em;
+            height: 13.5em;
+            border: 0.25em solid #000;
+            position: absolute;
+            top: 5em;
+            left: 15em;
+
+        }
+        .lega2 {
+            width: 0em;
+            height: 9em;
+            border: 0.25em solid #000;
+            transform: rotate(62deg);
+            position: absolute;
+            top: 12em;
+            left: 11em;
+        }
+        .lega3 {
+            width: 0em;
+            height: 9em;
+            border: 0.25em solid #000;
+            transform: rotate(-62deg);
+            position: absolute;
+            top: 12em;
+            left: 19em;
+        }
+        .legb {
+            position: relative;
+        }
+        .legb1 {
+            width: 0em;
+            height: 13.5em;
+            border: 0.25em solid #000;
+            position: absolute;
+            top: 5em;
+            left: 15em;
+
+        }
+        .legb2 {
+            width: 0em;
+            height: 9em;
+            border: 0.25em solid #000;
+            transform: rotate(62deg);
+            position: absolute;
+            top: 12em;
+            left: 11em;
+        }
+        .legb3 {
+            width: 0em;
+            height: 9em;
+            border: 0.25em solid #000;
+            transform: rotate(-62deg);
+            position: absolute;
+            top: 12em;
+            left: 19em;
+        }
+        /* leg结束 */
+        /* halo开始 */
+        .halo {
+            width: 15em;
+            height: 10em;
+            border-radius: 50%;
+            animation: light,eat 1s ease-in-out infinite alternate-reverse;
+            transition: 0.5s;
+            transform: scaleY(0.5);
+            position: absolute;
+            top: 9em;
+            left: 4em;
+            transform-origin: 45em 30em;
+        }
+
+        @keyframes light {
+            0% {
+                box-shadow: 0 0 10px yellow;
+            }
+
+            100% {
+                box-shadow: 0 0 30px yellow;
+            }
+        }
+        /* halo结束 */
+        /* rice开始 */
+        .rice-outer {
+            position: absolute;
+            top: 43em;
+            left: 11em;
+        }
+        .rice {
+            position: relative;
+        }
+        .rice1 {
+            width: 1em;
+            height: 1.5em;
+            border: 0.5em solid #000;
+            border-radius: 50%;
+            transform: rotate(50deg);
+            position: absolute;
+            top: 2em;
+            left: 2em;
+        }
+        .rice2 {
+            width: 1em;
+            height: 1.5em;
+            border: 0.5em solid #000;
+            border-radius: 50%;
+            transform: rotate(-30deg);
+            position: absolute;
+            top: 0.5em;
+            left: 3.5em;
+        }
+        .rice3 {
+            width: 1em;
+            height: 1.5em;
+            border: 0.5em solid #000;
+            border-radius: 50%;
+            transform: rotate(17deg);
+            position: absolute;
+            top: 1em;
+            left: 5em;
+        }
+        .rice4 {
+            width: 1em;
+            height: 1.5em;
+            border: 0.5em solid #000;
+            border-radius: 50%;
+            transform: rotate(-40deg);
+            position: absolute;
+            top: 1.4em;
+            left: 6.5em;
+        }
+        .rice5 {
+            width: 1em;
+            height: 1.5em;
+            border: 0.5em solid #000;
+            border-radius: 50%;
+            transform: rotate(-80deg);
+            position: absolute;
+            top: 1em;
+            left: 8em;
+        }
+        .rice6 {
+            width: 1em;
+            height: 1.5em;
+            border: 0.5em solid #000;
+            border-radius: 50%;
+            transform: rotate(10deg);
+            position: absolute;
+            top: 0.7em;
+            left: 9.5em;
+        }
+        .rice7 {
+            width: 1em;
+            height: 1.5em;
+            border: 0.5em solid #000;
+            border-radius: 50%;
+            transform: rotate(40deg);
+            position: absolute;
+            top: 1.8em;
+            left: 11em;
+        }
+        .rice8 {
+            width: 1em;
+            height: 1.5em;
+            border: 0.5em solid #000;
+            border-radius: 50%;
+            transform: rotate(-60deg);
+            position: absolute;
+            top: 2em;
+            left: 12.5em;
+        }
+        /* rice结束 */
+    </style>
+</head>
+
+<body>
+    <div id="chicke-body">
+        <div class="mouth-outer">
+            <div class="mouth">
+                <div class="mouth1"></div>
+                <div class="mouth2"></div>
+                <div class="mouth3"></div>
+                <div class="mouth4"></div>
+            </div>
+        </div>
+        <div class="body-outer">
+            <div class="body">
+                <div class="body1"></div>
+                <div class="body2"></div>
+                <div class="body3"></div>
+                <div class="body4"></div>
+                <div class="body5"></div>
+                <div class="body6"></div>
+                <div class="body7"></div>
+                <div class="body8"></div>
+                <div class="body9"></div>
+                <div class="body10"></div>
+                <div class="body11"></div>
+                <div class="body12"></div>
+                <div class="body13"></div>
+            </div>
+        </div>
+        <div class="cockscomb-outer">
+            <div class="cockscomb">
+                <div class="cockscomb1"></div>
+                <div class="cockscomb2"></div>
+                <div class="cockscomb3"></div>
+                <div class="cockscomb4"></div>
+                <div class="cockscomb5"></div>
+                <div class="cockscomb6"></div>
+                <div class="cockscomb7"></div>
+                <div class="cockscomb8"></div>
+            </div>
+        </div>
+        <div class="wing">
+            <div class="wing1"></div>
+            <div class="wing2"></div>
+            <div class="wing3"></div>
+        </div>
+        <div class="eye"></div>
+    </div>
+    <div class="chicke-leg">
+        <div class="leg-outer">
+            <div class="lega">
+                <div class="lega1"></div>
+                <div class="lega2"></div>
+                <div class="lega3"></div>
+            </div>
+            <div class="legb">
+                <div class="legb1"></div>
+                <div class="legb2"></div>
+                <div class="legb3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="halo">
+
+    </div>
+    <div class="rice-outer">
+        <div class="rice">
+            <div class="rice1"></div>
+            <div class="rice2"></div>
+            <div class="rice3"></div>
+            <div class="rice4"></div>
+            <div class="rice5"></div>
+            <div class="rice6"></div>
+            <div class="rice7"></div>
+            <div class="rice8"></div>
+        </div>
+    </div>
+</body>
+
+</html>
